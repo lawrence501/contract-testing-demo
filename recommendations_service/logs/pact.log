@@ -1,0 +1,63 @@
+I, [2021-09-15T15:55:43.651686 #5142]  INFO -- : Registered expected interaction GET /records/lmacdonald
+D, [2021-09-15T15:55:43.651967 #5142] DEBUG -- : {
+  "description": "get client records",
+  "request": {
+    "method": "GET",
+    "path": "/records/lmacdonald"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "sex": {
+        "json_class": "Pact::Term",
+        "data": {
+          "generate": "MALE",
+          "matcher": {
+            "json_class": "Regexp",
+            "o": 0,
+            "s": "^MALE|FEMALE$"
+          }
+        }
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-09-15T15:55:43.661003 #5142]  INFO -- : Received request GET /records/lmacdonald
+D, [2021-09-15T15:55:43.661075 #5142] DEBUG -- : {
+  "path": "/records/lmacdonald",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:9123",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-09-15T15:55:43.661347 #5142]  INFO -- : Found matching response for GET /records/lmacdonald
+D, [2021-09-15T15:55:43.661422 #5142] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "sex": {
+      "json_class": "Pact::Term",
+      "data": {
+        "generate": "MALE",
+        "matcher": {
+          "json_class": "Regexp",
+          "o": 0,
+          "s": "^MALE|FEMALE$"
+        }
+      }
+    }
+  }
+}
+I, [2021-09-15T15:55:43.667204 #5142]  INFO -- : Verifying - interactions matched
+I, [2021-09-15T15:55:43.670335 #5142]  INFO -- : Cleared interactions
+I, [2021-09-15T15:55:43.674084 #5142]  INFO -- : Writing pact for mhr-service to /Users/macdonl4/External/monash-contract-testing-demo/recommendations_service/pacts/recommendations-service-mhr-service.json

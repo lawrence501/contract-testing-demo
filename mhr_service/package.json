@@ -1,0 +1,23 @@
+{
+  "name": "mhr-service",
+  "version": "1.0.0",
+  "description": "MyHealthRecord service for MacDonald Health Centres",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/.bin/mocha --timeout 10000 providerPact.spec.js"
+  },
+  "config": {
+    "pact_binary_location": "./pact_binary"
+  },
+  "dependencies": {
+    "@pact-foundation/pact": "^9.16.0",
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mocha": "^9.0.3",
+    "moment": "^2.29.1",
+    "path": "^0.12.7"
+  }
+}
